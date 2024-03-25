@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Jitjang</title>
+    <meta name="author" content="Nick Jitjang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Nick Jitjang professional website">
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Nick Jitjang</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html"> Home</a>
+            <a href="cv.html"> CV</a>
+            <a href="contact.html" class="active">Contact Me</a>
+            <a href="fun.html"> For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+
+               <i class="fa fa-bars" onclick="activeNav()"></i>
+
+             </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form action="">
+            <label for="name"> Your Name (required): </label>
+            <input type="text" name="name" id="name" required/>   
+            <label for="email"> Your Email (required): </label>
+            <input type="text" name="email" id="email" required/>  
+            <label for="comment"> Your Comment or Question:</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+            <input type="submit" value="send" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>pjitjang@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>412-430-1586</td></tr>
+            <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/pakorn-jitjang-680680223/"> LinkedIn</a></td></tr>
+        </table>
+    </div>
+    <footer>
+        <p id="copyYear">Nick Jitjang &copy;</p>
+    </footer>
+</body>
+</html>
